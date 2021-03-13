@@ -171,7 +171,7 @@
       appKey: 'mexnqoMImeBjNr742zebKPvx',
       placeholder: '我想说点什么',
       avatar: 'monsterid',
-      meta: 'nick/QQ,mail,link'.split(','),
+      meta: 'nick,mail,link'.split(','),
       pageSize: '10',
       lang: 'zh-CN',
       recordIP: false,
@@ -195,7 +195,7 @@
   }
 
   if (typeof Valine === 'function') initValine() 
-  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
 }
 
 if ('Valine' === 'Valine' || !true) {
